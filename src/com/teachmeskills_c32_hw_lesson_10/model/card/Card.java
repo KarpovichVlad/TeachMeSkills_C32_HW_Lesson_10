@@ -1,4 +1,4 @@
-package com.teachmeskills_c32_hw_lesson_10.model;
+package com.teachmeskills_c32_hw_lesson_10.model.card;
 
 import java.util.Objects;
 
@@ -18,8 +18,25 @@ public class Card {
         return cardNumber;
     }
 
+    public void setCardNumber(String cardNumber) {
+        this.cardNumber = cardNumber;
+    }
+
     public String getCvv() {
         return cvv;
+    }
+
+    public void setCvv(String cvv) {
+        this.cvv = cvv;
+    }
+
+    @Override
+    public String toString() {
+        return "Card{" +
+                "cardNumber='" + cardNumber + '\'' +
+                ", cvv='" + cvv + '\'' +
+                ", balance=" + balance +
+                '}';
     }
 
     @Override
